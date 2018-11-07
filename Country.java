@@ -5,6 +5,6 @@ public abstract class Country {
 	public abstract int invade(String country);
 	public abstract int landArea();
 	public abstract int armySize();
-	
+	public abstract void run();
 	
 }

@@ -11,7 +11,13 @@ public class WWII {
 			Scanner reader = new Scanner(System.in);
 		    c = reader.next(".").charAt(0); 
 		    
-		    System.out.println("Pick a Country to lead, press g for Germany, r for the Soviet Union, u for the US");
+		    System.out.println("Pick a Country to lead, press g for Germany, u for the Soviet Union, u for the US");
+		    
+		    if(c=='p') {		    	
+		    	Poland poland=new Poland();
+		    	poland.run();	    	
+		    	
+		    }
 		    
 		    if(c=='g') {		    	
 		    	Germany germany=new Germany();
@@ -19,10 +25,15 @@ public class WWII {
 		    	
 		    }
 		    
+		    if(c=='u') {		    	
+		    	USSR ussr=new USSR();
+		    	ussr.run();    	
+		    	
+		    }
 		    
 		    
-		    //Add countries here in if statments
 		    
+		   		    
 		    
 		    
 		}

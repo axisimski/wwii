@@ -3,8 +3,15 @@ import java.util.Scanner;
 
 public class Germany extends Country{
 	
-	public int armySize=2000000;
-	public int landArea=400;
+	/*Have each country contain all countries within itself
+	 * might be moved to WWII class at a latter stage*/
+	
+	public Poland poland=new Poland();
+	public USSR ussr=new USSR();
+	
+	public int armySize=1000000; 
+	public int landArea=181000; ///the land area of the Weimar republic
+	
 	public ArrayList<String> conqured=new ArrayList<String>();
 	
 	
